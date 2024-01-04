@@ -31,7 +31,7 @@ class Scroller:
                 continue
 
             # Calculate offset from sine wave.
-            y = self.height_offset + math.floor(self.amplitude * math.sin(x / float(self.display.width) * 2.0 * math.pi))
+            y = self.height_offset # + math.floor(self.amplitude * math.sin(x / float(self.display.width) * 2.0 * math.pi))
 
             # Draw text.
             self.display.draw.text((x, y), c, font=self.font, fill=255)
